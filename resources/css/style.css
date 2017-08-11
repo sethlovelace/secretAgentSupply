@@ -1,0 +1,252 @@
+/* Universal Stylings */
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  background-color: white;
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header Stylings */
+
+header {
+  background-color: black;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px 12px 0.5em;
+}
+
+header .container img {
+  height: 1.5rem;
+  padding-right: 15px;
+}
+
+/* Main Banner Stylings */
+
+.banner {
+  height: 25rem;
+  background-image: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-text {
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  margin-top: 0.25rem;
+  font-weight: bold;
+  width: inherit;
+}
+
+.banner-text p {
+  font-size: 1rem;
+}
+
+/* Navigation Bar Stylings */
+
+.navigation {
+  background-color: firebrick;
+}
+
+.navigation .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+.tablet {
+  display: none;
+}
+
+/* Image Content Stylings */
+
+.images, .information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.image-box {
+  border: 4px solid black;
+  width: 30%;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9rem;
+  padding: 2rem 0;
+}
+
+.image img {
+  max-width: 8rem;
+  padding: 2rem 0;
+}
+
+.description {
+  background-color: black;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+/* Information Stylings*/
+
+.info-box {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+
+.title {
+  background-color: black;
+  padding: 1rem 2rem;
+}
+
+.info-box span {
+  color: black;
+}
+
+/* Footer Stylings */
+
+footer {
+  background-color: black;
+  padding: 5rem 0;
+  text-align: left;
+}
+
+/******************************************************************************/
+
+                            /* Media Queries */
+
+/* Tablet sized */
+
+@media only screen and (max-width: 1024px) {
+
+  /* Universal */
+
+  html {
+    font-size: 16px;
+  }
+
+  /* Navigation */
+
+  .tablet {
+    display: flex;
+    justify-content: center;
+  }
+
+  .large-screen {
+    display: none;
+  }
+
+  /* Images */
+
+  .image-box {
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+}
+
+/* Phone sized */
+
+@media only screen and (max-width: 470px) {
+
+  /* Universal */
+
+  html {
+    font-size: 16px;
+  }
+
+  /* Banner */
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner-text {
+    position: relative;
+    padding: 1rem 2rem;
+    top: 10rem;
+    width: inherit;
+  }
+
+  .banner-text p {
+    font-size: .77 rem;
+  }
+
+  .banner-text h2 {
+    font-size: 1rem;
+  }
+
+  /* Navigation */
+
+  .tablet {
+    display: flex;
+    justify-content: center;
+  }
+
+  .large-screen {
+    display: none;
+  }
+
+  /* Images */
+
+  .images {
+    justify-content: center;
+  }
+
+  .image-box {
+    width: 90%;
+  }
+
+  .glasses, .watch {
+    display: none;
+  }
+
+  /* Information */
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box {
+    width: 90%;
+    text-align: left;
+    margin: 0.5rem 0 0 0;
+  }
+
+  /* Footer */
+
+  footer {
+    margin: 4rem 0 0 0;
+    text-align: center;
+  }
+
+
+
+
+
+}
